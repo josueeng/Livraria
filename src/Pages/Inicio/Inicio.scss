@@ -1,0 +1,52 @@
+.ImgBan {
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+
+    @media (max-width: 768px) {
+        width: 100%;
+        height: auto;
+    }
+
+    @media (max-width: 480px) {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.container {
+    position: relative;
+}
+
+.texto {
+    position: absolute;
+    top: 50%;
+    right: 60%;
+    flex-wrap: wrap;
+    width: 400px;
+    transform: translateY(-50%);
+    color: white;
+    font-size: 1.5rem;
+    text-align: left;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 40px;
+
+    @media (max-width: 768px) {
+        width: 300px;
+        font-size: 30px;
+        left: 20%;
+        font-weight: bold;
+        color: white;
+        text-shadow: 2px 2px 2px black;
+    }
+
+    @media (max-width: 480px) {
+        width: 250px;
+        font-size: 20px;
+        right: 40%;
+        text-align: center;
+    }
+}

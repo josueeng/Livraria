@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.header {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  height: 150px;
+  background: linear-gradient(90deg, #001B2F 0%, #005695 100%);
+  
+  @media (max-width: 768px) {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+  }
+}
+
+.Logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 400px;
+  height: 100px;
+  color: white;
+
+  @media (max-width: 768px) {
+    width: 100%;
+    justify-content: space-around;
+  }
+}
+
+.TextLogo {
+  font-size: 30px;
+  font-weight: bold;
+  color: white;
+
+  @media (max-width: 768px) {
+    font-size: 24px;
+  }
+}
+
+.Menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 400px;
+  height: 100px;
+
+  @media (max-width: 768px) {
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+.MenuList {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 400px;
+  height: 100px;
+  list-style: none;
+
+  @media (max-width: 768px) {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+}
+
+.MenuItem {
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  transition: all 0.3s ease-in-out;
+
+  @media (max-width: 768px) {
+    font-size: 20px;
+    padding: 5px;
+  }
+}
+
+.TextLink {
+  text-decoration: none;
+  color: white;
+}
+
+.InputPesquisar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 300px;
+  height: 40px;
+  background-color: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 30px;
+  font-family: Inter;
+  font-size: 15px;
+  color: #ffffff;
+  padding: 10px 20px;
+
+  &::placeholder {
+    font-size: 15px;
+    color: #ffffff;
+  }
+
+  @media (max-width: 768px) {
+    width: 100%;
+    font-size: 14px;
+  }
+}
+
+.LupaPesqu {
+  position: absolute;
+  right: 10px;
+  top: 43%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+
+  @media (max-width: 768px) {
+    right: 5px;
+    width: 15px;
+    height: 15px;
+  }
+}
+
+.ContPesq {
+  display: flex;
+  position: relative;
+  justify-content: space-around;
+  width: 250px;
+  height: 50px;
+
+  @media (max-width: 768px) {
+    width: 100%;
+  }
+}
