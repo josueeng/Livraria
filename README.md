@@ -1,12 +1,65 @@
-# React + Vite
+# Livraria Front-End
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este projeto é uma aplicação front-end desenvolvida em React utilizando Vite. A aplicação permite visualizar livros disponíveis e cadastrar novos livros para doação.
 
-Currently, two official plugins are available:
+## Tecnologias Utilizadas
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **React**: Biblioteca JavaScript para construção de interfaces de usuário.
+- **Vite**: Ferramenta de build rápida para desenvolvimento front-end.
+- **SCSS**: Pré-processador CSS para estilização.
 
-## Expanding the ESLint configuration
+## Funcionalidades
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Página de Livros
+- Exibe uma lista de livros disponíveis.
+- Cada livro contém informações como título, autor, categoria e imagem.
+- Os dados são consumidos de uma API externa.
+
+### Página de Doação
+- Permite o cadastro de novos livros para doação.
+- Formulário para inserir título, categoria, autor e URL da imagem do livro.
+- Envia os dados para a API para registro.
+
+## Estrutura de Componentes
+
+- **Header**: Cabeçalho da aplicação.
+- **Footer**: Rodapé da aplicação.
+- **Livros**: Página para exibição de livros.
+- **Doar**: Página para cadastro de novos livros.
+
+## Como Executar o Projeto
+
+1. Clone o repositório:
+    ```bash
+    git clone <URL_DO_REPOSITORIO>
+    ```
+2. Instale as dependências:
+    ```bash
+    npm install
+    ```
+3. Inicie o servidor de desenvolvimento:
+    ```bash
+    npm run dev
+    ```
+
+## API Utilizada
+
+A aplicação consome dados da seguinte API:
+- **Base URL**: `https://bookregisterapi.onrender.com`
+
+### Endpoints
+- **GET /livros**: Retorna a lista de livros disponíveis.
+- **POST /doar**: Cadastra um novo livro.
+
+## Estilização
+
+Os estilos são organizados em arquivos SCSS para facilitar a manutenção e reutilização de código.
+
+## Contribuição
+
+Contribuições são bem-vindas! Sinta-se à vontade para abrir issues ou enviar pull requests.
+
+## Licença
+
+Este projeto está licenciado sob a [MIT License](LICENSE).
+
