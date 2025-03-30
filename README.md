@@ -55,11 +55,3 @@ A aplicação consome dados da seguinte API:
 
 Os estilos são organizados em arquivos SCSS para facilitar a manutenção e reutilização de código.
 
-## Contribuição
-
-Contribuições são bem-vindas! Sinta-se à vontade para abrir issues ou enviar pull requests.
-
-## Licença
-
-Este projeto está licenciado sob a [MIT License](LICENSE).
-
